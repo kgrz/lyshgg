@@ -16,3 +16,11 @@ def boomBangs xs
   # Using .select here won't work
   xs.reject { |x| x.odd? }.collect {|x| x > 10 ? "BOOM!" : "BANG!" }
 end
+
+def sumTenTwentyThirtyForty
+  (10..20).collect { |x| (30..40).collect { |y| y+x } }.flatten
+end
+
+def cycleTakeFifteen
+  (1..10).cycle.take 15
+end
